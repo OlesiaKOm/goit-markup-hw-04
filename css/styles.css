@@ -117,6 +117,7 @@ img{
 
 .contact-item{
   margin-right: 50px;
+  
 }
 
 .contact-item:last-child{
@@ -147,6 +148,7 @@ img{
     height: 12px;
     padding: 0px;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 .icon-tel{
@@ -154,7 +156,7 @@ img{
     height: 16px;
     padding:  0px;
     margin-right: 10px;
-  background-position: center;
+    vertical-align: middle;
     
 }
 
@@ -544,14 +546,12 @@ img{
 
 .client-list{
     display: flex;
-    
-   
+    justify-content: center;
+    margin-top: 50px;
 
 }
 
-.client-list:last-child{
-    margin-right: 0px;
-}
+
 
 .client{
     width: 170px;
@@ -560,16 +560,27 @@ img{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: #AFB1B8;
+    justify-content: center;
 
 
 }
-.client:hover,
-.client:focus{
+
+.client-list:last-child{
+    margin-right: 0px;
+}
+
+/* .client.link:hover,
+.client.link:focus{
     color: var(--accent-color);
-}
+} */
 
 
 /* footer */
+
+.low{
+    display: flex;
+}
+
 .logo-color-two {
     color: #FFFFFF;
 }    
@@ -599,4 +610,45 @@ img{
     margin-top: 9px;
    
         
+}
+
+.join{
+   margin-left: 70px;
+}
+
+.join-title{
+    font-weight: 700;
+    line-height: 1.143;
+    text-transform: uppercase;
+    color: var(--basic-color);
+
+}
+
+.join-netvork{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+
+.join-box{
+    display: block;
+    width: 44px;
+    height: 44px;
+    align-content: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    margin-right: 10px;
+   
+}
+
+.joinsocial{
+    width: 20px;
+    height: 20px;
+    fill: var(--basic-color);
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.1);
+    align-items: center;
+    
+    
 }
